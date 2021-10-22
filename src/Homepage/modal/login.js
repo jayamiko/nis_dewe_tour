@@ -14,10 +14,10 @@ function Login() {
 
     return (
         <>
-            {values.map((v, idx) => (
-                <Button key={idx} className="me-2" onClick={() => handleShow(v)}>
+            {values.map((m, id) => (
+                <Button key={id} className="me-2" onClick={() => handleShow(m)}>
                     Full screen
-                    {typeof v === "string" && `below ${v.split("-")[0]}`}
+                    {typeof m === "string" && `below ${m.split("-")[0]}`}
                 </Button>
             ))}
             <Modal show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
