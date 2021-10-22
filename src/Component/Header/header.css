@@ -18,12 +18,14 @@
   .container-lg h1 {
     font-weight: 600;
     font-size: 64px;
+  
     color: #fff;
   }
   
   .container-lg h2 {
     font-weight: 200;
     font-size: 45px;
+  
     color: #ffffff;
   }
   
@@ -56,8 +58,8 @@
   
   .cards-container {
     position: absolute;
-    width: 1210px;
-    height: 350px;
-    left: 115px;
-    top: 491px;    
+    height: 300px;
+    left: 140px;
+    top: 491px;
+    width: 80%;
   }

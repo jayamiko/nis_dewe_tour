@@ -1,8 +1,11 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./main.css";
 import Data from "../../Data/Data.json";
 import Footer from "../Footer/footer";
+// import { Route, Switch, Link } from "react-router-dom";
+// import DetailTour from "../../Homepage/detailTour/detailtour";
 
 function Main() {
     return (
@@ -16,17 +19,17 @@ function Main() {
                 <img className="palmImg" src="assets/palm 1.png" alt="palm"></img>
                 <h1 className="groupTitle">Group Tour</h1>
                 <div className="container-fluid containerGroup mt-5 d-flex gap-3 flex-wrap ">
-                    {Data.map((el) => {
-                        let path = `assets/${el.image}`;
+                    {Data.map((datas) => {
+                        let path = `assets/${datas.image}`;
                         return (
                             <div className="container rounded mt-3">
                                 <img src={path} alt="destination"></img>
                                 <h3>
-                                    {el.day}D/{el.nigth}N {el.destination}
+                                    {datas.day}D/{datas.nigth}N {datas.destination}
                                 </h3>
                                 <div className="priceContainer d-flex justify-content-between">
-                                    <p>IDR. {el.price}</p>
-                                    <small>{el.country}</small>
+                                    <p>IDR. {datas.price}</p>
+                                    <small>{datas.country}</small>
                                 </div>
                             </div>
                         );
@@ -34,7 +37,7 @@ function Main() {
                 </div>
                 <Footer />
             </Container>
-        </div>
+        </div >
     );
 }
 
