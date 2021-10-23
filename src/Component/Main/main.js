@@ -23,16 +23,18 @@ function Main() {
                         {Data.map((datas) => {
                             let path = `assets/${datas.image}`;
                             return (
+                                <Link to='/detailtour'>
                                 <div className="container rounded mt-3">
                                     <img src={path} alt="destination"></img>
                                     <h3>
                                         {datas.day}D/{datas.nigth}N {datas.destination}
                                     </h3>
                                     <div className="priceContainer d-flex justify-content-between">
-                                        <Link to='/detailtour'><p>IDR. {datas.price}</p></Link>
+                                        <p>IDR. {datas.price}</p>
                                         <small>{datas.country}</small>
                                     </div>
                                 </div>
+                                </Link>
                             );
                         })}
                     </div>

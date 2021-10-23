@@ -73,13 +73,6 @@ function Navbar() {
                                     <img src="assets/palm2.png" className='palm'></img>
                                     <img src="assets/hibiscus2.png" className='hibiscus'></img>
                                     <h2 className="text-center my-5">Register</h2>
-                                    <button
-                                        type="button"
-                                        class="btn-close"
-                                        data-bs-dismiss="modal"
-                                        aria-label="Close"
-                                        onClick={closeModalRegister}
-                                    ></button>
                                     <Form>
                                         <Form.Group className="mb-4" controlId="formBasicName">
                                             <Form.Label className="fw-bold">FullName</Form.Label>
