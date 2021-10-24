@@ -66,8 +66,6 @@ function Payment() {
                                 </div>
                             </div>
                         </div>
-                        {/* <div className="d-flex justify-content-end mb-0 mt-5">
-                        </div> */}
                     </div>
                 </>
 
