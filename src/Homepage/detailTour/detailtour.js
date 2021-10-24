@@ -111,7 +111,7 @@ function IDR() {
     )
 }
 
-function State() {
+function State(props) {
     const [count, setCount] = useState(0);
 
     const increment = () => {
@@ -146,4 +146,4 @@ function State() {
     );
 }
 
-export default Detailtour;
+export default { Detailtour, IDR };
