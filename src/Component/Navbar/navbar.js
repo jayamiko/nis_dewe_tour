@@ -1,7 +1,6 @@
 import React from "react";
 import "./navbar.css";
 import { useState } from "react";
-// import Login from '../../Homepage/modal/login'
 import { Button, Modal, Form } from "react-bootstrap";
 
 function Navbar() {
@@ -40,6 +39,7 @@ function Navbar() {
                             </a>
                             <Modal show={modal}>
                                 <Modal.Body>
+                                    <a onClick={closeModalLogin}>x</a>
                                     <Form>
                                         <h2 className="text-center my-5">Login</h2>
                                         <img src="assets/palm2.png" className="palm"></img>
@@ -56,8 +56,7 @@ function Navbar() {
                                             <Button
                                                 className="text-white fw-bold"
                                                 variant="warning"
-                                                type="submit"
-                                            >
+                                                type="submit">
                                                 Submit
                                             </Button>
                                             <small className="text-center">
@@ -69,6 +68,7 @@ function Navbar() {
                                 </Modal.Body>
                             </Modal>
                             <Modal show={registerModal}>
+                                <a onClick={closeModalRegister}>x</a>
                                 <Modal.Body className="modal-content">
                                     <img src="assets/palm2.png" className='palm'></img>
                                     <img src="assets/hibiscus2.png" className='hibiscus'></img>
@@ -117,13 +117,6 @@ function Navbar() {
                             </a>
                         </li>
                     </ul>
-                    {/* )} */}
-                </div>
-                <div className="menu-toggle">
-                    <input type="checkbox" />
-                    <span></span>
-                    <span></span>
-                    <span></span>
                 </div>
             </div>
         </div>
